@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Políticas - Club del Corral</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --corral-red: #d42127;
+            --corral-blue: #003098;
+            --corral-yellow: #edb209;
+            --corral-green: #4a945c;
+        }
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .policy-section {
+            margin-bottom: 2.5rem;
+        }
+        .policy-section h2 {
+            color: var(--corral-blue);
+            border-left: 4px solid var(--corral-red);
+            padding-left: 1rem;
+            margin-bottom: 1.25rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+        .accent-border {
+            border-bottom: 4px solid var(--corral-yellow);
+        }
+        .bg-corral-blue { background-color: var(--corral-blue); }
+        .text-corral-red { color: var(--corral-red); }
+        .btn-link { color: var(--corral-blue); font-weight: 600; }
+        .btn-link:hover { color: var(--corral-red); text-decoration: underline; }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen p-4 md:p-10">
+    <div class="max-w-4xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden border-t-8 border-[#d42127]">
+        <!-- Header con Logo -->
+        <div class="bg-white p-8 text-center flex flex-col items-center border-b">
+            <img src="https://firebasestorage.googleapis.com/v0/b/apps-superdelcorral.firebasestorage.app/o/companies%2Flogos%2F733c95c1-9614-480d-bde4-993cbfa3cc98.webp?alt=media" 
+                 alt="Logo Supermercados del Corral" 
+                 class="h-24 md:h-32 object-contain mb-4"
+                 onerror="this.style.display='none'">
+            <h1 class="text-3xl md:text-4xl font-black text-[#003098] tracking-tighter uppercase">Club del Corral</h1>
+            <div class="w-24 h-1 bg-[#edb209] my-2"></div>
+            <p class="text-gray-600 font-medium">Términos, Condiciones y Política de Privacidad</p>
+            <p class="text-xs mt-2 text-gray-400">Versión 1.2 | Última actualización: Abril 2026</p>
+        </div>
+
+        <div class="p-8 md:p-14">
+            <!-- Quick Navigation -->
+            <nav class="mb-12 p-6 bg-blue-50 rounded-2xl border border-blue-100">
+                <p class="font-bold text-[#003098] mb-3 flex items-center">
+                    <span class="mr-2">📋</span> Índice de contenido:
+                </p>
+                <ul class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+                    <li><a href="#terminos" class="btn-link">1. Términos de Uso</a></li>
+                    <li><a href="#privacidad" class="btn-link">2. Privacidad de Datos</a></li>
+                    <li><a href="#cookies" class="btn-link">3. Política de Cookies</a></li>
+                </ul>
+            </nav>
+
+            <!-- Sección 1: Términos y Condiciones -->
+            <section id="terminos" class="policy-section">
+                <h2>1. Términos y Condiciones de Uso</h2>
+                <p class="mb-4 text-gray-700">Bienvenido a <strong>Club del Corral</strong>, la plataforma exclusiva de beneficios de Supermercados del Corral. Al utilizar esta aplicación, usted acepta los términos aquí descritos para asegurar una relación de confianza y transparencia.</p>
+                
+                <h3 class="font-bold mt-6 text-[#d42127]">1.1 Registro de Usuario</h3>
+                <p class="text-gray-600">Para formar parte del Club, el usuario deberá completar el registro proporcionando su nombre legal, correo electrónico y dirección de residencia. Esta información nos permite validar su identidad y asignar los beneficios correspondientes a su zona geográfica.</p>
+
+                <h3 class="font-bold mt-6 text-[#d42127]">1.2 Publicaciones de Empresas Aliadas</h3>
+                <p class="text-gray-600">Nuestra app actúa como vitrina para las diversas empresas que conforman el ecosistema de Supermercados del Corral. Aunque validamos la calidad de las ofertas, los precios y el stock son responsabilidad de cada unidad de negocio emisora de la publicación.</p>
+
+                <div class="mt-6 p-4 bg-green-50 border-l-4 border-[#4a945c] text-[#4a945c] text-sm italic">
+                    Nota: Los beneficios del Club no son canjeables por dinero en efectivo.
+                </div>
+            </section>
+
+            <!-- Sección 2: Política de Privacidad -->
+            <section id="privacidad" class="policy-section">
+                <h2>2. Política de Privacidad</h2>
+                <p class="mb-4">Club del Corral se compromete con la seguridad de su información personal, cumpliendo con los requisitos de las tiendas oficiales de aplicaciones.</p>
+
+                <h3 class="font-bold mt-6 text-[#d42127]">2.1 Recolección de Datos</h3>
+                <ul class="space-y-3 mt-4">
+                    <li class="flex items-start">
+                        <span class="text-[#edb209] mr-2">●</span>
+                        <span><strong>Identidad:</strong> Nombre y apellidos para personalización.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#edb209] mr-2">●</span>
+                        <span><strong>Contacto:</strong> Correo electrónico para envío de estados de cuenta de puntos.</span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-[#edb209] mr-2">●</span>
+                        <span><strong>Residencia:</strong> Datos de ubicación para sugerir la sucursal más cercana.</span>
+                    </li>
+                </ul>
+
+                <h3 class="font-bold mt-8 text-[#d42127]">2.2 Protección de la Información</h3>
+                <p class="text-gray-600">Implementamos protocolos de cifrado para asegurar que sus datos de residencia y contacto nunca sean compartidos con entidades externas al grupo Supermercados del Corral sin su consentimiento explícito.</p>
+
+                <div class="mt-8 p-6 bg-gray-50 rounded-xl border border-gray-200">
+                    <p class="font-bold text-gray-800">Derechos ARCO</p>
+                    <p class="text-sm text-gray-600 mt-1">Usted tiene derecho a Acceder, Rectificar, Cancelar u Oponerse al uso de sus datos. Contacto: 
+                        <a href="mailto:servicioalcliente@superdelcorral.com" class="text-[#003098] font-bold">servicioalcliente@superdelcorral.com</a>
+                    </p>
+                </div>
+            </section>
+
+            <!-- Sección 3: Cookies -->
+            <section id="cookies" class="policy-section pt-6">
+                <h2>3. Cookies y Tecnologías</h2>
+                <p class="text-gray-600 italic">Utilizamos tecnologías de seguimiento esenciales para recordar su sesión y preferencias de navegación dentro de las publicaciones de la app.</p>
+            </section>
+
+            <!-- Footer con Colores -->
+            <footer class="mt-16 pt-10 border-t-2 border-gray-100 text-center">
+                <div class="flex justify-center gap-2 mb-6">
+                    <div class="w-8 h-2 bg-[#d42127]"></div>
+                    <div class="w-8 h-2 bg-[#003098]"></div>
+                    <div class="w-8 h-2 bg-[#edb209]"></div>
+                    <div class="w-8 h-2 bg-[#4a945c]"></div>
+                </div>
+                <p class="text-sm font-bold text-gray-800">© 2026 SUPERMERCADOS DEL CORRAL</p>
+                <p class="text-xs text-gray-500 mt-1">Este documento es vinculante para todos los usuarios de la aplicación Club del Corral.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
